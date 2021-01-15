@@ -83,14 +83,6 @@ def slot_sig3(*args, **kwargs):
     print(kwargs)
     time.sleep(1)
 
-def slot_sig4():
-    a = 0
-    while a < 200000:
-        (99.9 * 55.3) / 34.34
-        a += 1
-    print('Finish!')
-
-
 if __name__ == '__main__':
     # two sync signals call
     sigmgr.connect('Signal_01', slot_sig1)
