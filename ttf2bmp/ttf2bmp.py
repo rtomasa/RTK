@@ -62,7 +62,7 @@ def main(argv):
 	font_file = font_name + '.ttf'
 	out_dir = './output/'
 	image_file = out_dir + font_name + ".bmp"
-	font_data_file = out_dir + font_name + ".font"
+	font_data_file = out_dir + font_name + ".dat"
 
 	'''Image parameters'''
 
@@ -102,7 +102,7 @@ def main(argv):
 			y += linemax
 			linemax = 0
 		sprite_sheet.blit(charsurf,(x, y))
-		fout.write(c + " " + str(x-extra_w) + " " + str(y) + " " + str(char_w) + " " + str(char_h) + "\n")
+		fout.write(c + "," + str(x-extra_w) + "," + str(y) + "," + str(char_w) + "," + str(char_h) + "\n")
 		x += char_w
 	pygame.image.save(sprite_sheet, image_file)
 	fout.close
