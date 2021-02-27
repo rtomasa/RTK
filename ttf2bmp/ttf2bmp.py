@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import os, sys, getopt
+from pathlib import Path
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 try:
 	import pygame
@@ -60,9 +61,11 @@ def main(argv):
 	font_color = tuple(int(font_color[i:i+2], 16) for i in (0, 2, 4))
 	bg_color = tuple(int(bg_color[i:i+2], 16) for i in (0, 2, 4))
 	font_file = font_name + '.ttf'
-	out_dir = './output/'
-	image_file = out_dir + font_name + ".bmp"
-	font_data_file = out_dir + font_name + ".dat"
+	out_dir = Path('output/')
+	file_name = font_name + ".bmp"
+	image_file = out_dir / file_name
+	file_name = font_name + ".dat"
+	font_data_file = out_dir / file_name
 
 	'''Image parameters'''
 
