@@ -5,7 +5,7 @@
 ### Pygame tools and libraries
 
 * RTK - Toolkit module that provides you premade classes and objects for creating simple Pygame UI/Games using pygame
-    + rtk.py
+    + rtk.py (comming soon...)
     
 * ttf2bmp - CLI program to create BMP sprite sheets from TTF font files
     + ttf2bmp.py
