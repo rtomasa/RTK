@@ -1,4 +1,4 @@
-# Python/Pygame sample programs and tools by Rubén Tomás Alonso
+# Python/Pygame sample programs and tools
 
 ## Contents
 
